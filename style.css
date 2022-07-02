@@ -1,0 +1,911 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&family=Open+Sans:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    --button1: hsl(171, 66%, 44%);
+    --button2: hsl(233, 100%, 69%);
+    --heading: hsl(210, 10%, 33%);
+    --paragraph:hsl(201, 11%, 66%);
+}
+
+body{
+    box-sizing: border-box;
+    font-family: 'Bai Jamjuree', sans-serif;
+    overflow-x: hidden;
+    width: 100%;
+}
+html,body{
+    overflow-x: hidden;
+}
+/* -----------------creating header par-------------------------- */
+header{
+    width: 100%;
+    height: 100vh;
+    background-image: url(images/bg-header-desktop.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+header img{
+    width: 100px;
+    margin-bottom: 3rem;
+}
+
+header .header-content{
+    text-align: center;
+
+}
+header .header-content h2{
+    font-size: 2.5rem;
+    color: var(--heading);
+    margin-bottom: 1rem;
+}
+
+header .header-content p{
+    font-size: 1.1rem;
+    color: var(--paragraph);
+    margin-bottom: 2rem;
+    font-weight: 400;
+}
+
+header .header-btn button, .clipboard-ios button{
+    width: 200px;
+    height: 50px;
+    border: none;
+    border-radius: 50px;
+    background-color: var(--button1);
+    color: white;
+    font-size: 17px;
+    font-weight: 400;
+    box-shadow: 0 3px 0 rgba(38, 186, 164,0.2);
+}
+
+header .header-btn button:nth-child(2){
+    background-color: var(--button2);
+}
+
+/* --------Snippet--------- */
+.snippet{
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    width: 100%;
+}
+.snippet h2{
+    color: var(--heading);
+    font-size: 2rem;
+}
+.snippet p{
+    width: 33%;
+    text-align: center;
+    margin: 10px auto;
+    color: var(--paragraph);
+    line-height: 25px;
+}
+
+.macbook{
+    margin-top: 60px;
+    position: relative;
+}
+
+.macbook .row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.macbook .row .col:nth-child(2){
+    width: 55%;
+    position: absolute;
+    right: 0;
+    height: 62vh;
+    display: flex;
+
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+.macbook .row .col:nth-child(1){
+    margin-left: -30px;
+}
+
+.macbook .row .col:nth-child(2) h2{
+    color: var(--heading);
+}
+.macbook .row .col:nth-child(2) p{
+    width: 62%;
+    color: var(--paragraph);
+    margin-top: 10px;
+}
+
+/* -------clipboard----------------- */
+
+.clipboard{
+    overflow-x: hidden;
+    text-align: center;
+    margin-top: 120px;
+}
+
+.clipboard h2{
+    font-size: 2.2rem;
+    color: var(--heading);
+    margin-bottom: 10px;
+}
+
+.clipboard p{
+    margin: 0 auto;
+    width: 35%;
+    color: var(--paragraph);
+    font-size: 1rem;
+    line-height: 2rem;
+}
+
+/* ----------ipad---------- */
+.ipad{
+    text-align: center;
+    margin-top: 75px;
+}
+
+/* -------------workflow----------------- */
+
+.workflow{
+    text-align: center;
+    margin-top: 50px;
+}
+
+.workflow h2{
+    font-size: 2.3rem;
+    color: var(--heading);
+    margin-bottom: 20px;
+}
+
+.workflow p{
+    color: var(--paragraph);
+    font-size: 1.1rem;
+}
+
+.ipad img{
+    max-width: 100%;
+}
+/* ----------features---------- */
+
+.features{
+    margin-top: 100px;
+    position: relative;
+}
+
+.features .row{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    height: 100%;
+}
+.features .row .col{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 10px 10px;
+}
+.features .row .col h2{
+    font-size: 2rem;
+    color: var(--heading);
+}
+.features .row .col p{
+    text-align: center;
+    width: 47%;
+    color: var(--paragraph);
+}
+
+/* ------------companies---------------- */
+
+.companies{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.companies .row{
+    width: 80%;
+    margin: 100px 20px 0 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+/* ------------clipboard-ios-------------------------- */
+.clipboard-ios{
+    margin-top: 120px;
+}
+
+.clipboard-ios h2{
+    text-align: center;
+    font-size: 2.2rem;
+    color: var(--heading);
+}
+.clipboard-ios p{
+    text-align: center;
+    width: 35%;
+    margin: 20px auto;
+    font-size: 1.1rem;
+    color: var(--paragraph);
+}
+.clipboard-ios .button{
+    margin-top: 40px;
+    text-align: center;
+}
+.clipboard-ios .button button{
+    margin-right: 10px;
+}
+.clipboard-ios .button .btn-primary{
+    background-color: var(--button2);
+    box-shadow: 0 3px 0 rgba(38, 186, 164,0.2);
+}
+
+/* ----footer-section--------------- */
+.footer-section{
+    margin-top: 250px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: rgba(159, 171, 178,0.1);
+    padding: 20px 50px;
+}
+.footer-section .row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.footer-section .row .col img{
+    max-width: 50px;
+}
+.footer-section .row .col{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-right: 150px;
+}
+
+.footer-section .row .col a{
+    text-decoration: none;
+    margin-bottom: 20px;
+    color: var(--heading);
+    font-weight: 600;
+}
+
+.footer-section .row .col:nth-child(4){
+    display: flex;
+    height: 80px;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+/* ------media query to small devices----------------- */
+
+@media only screen and (max-width:480px) {
+    
+    /* -------------header section--------------- */
+    header{
+        background-image: url(images/bg-header-mobile.png);
+        width: 100%;
+        height: 100vh;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    header img{
+        width: 100px;
+        margin: 15rem 0 3rem 0;
+        transform: translateX(250%);
+        animation: slide 0.3s ease-in forwards;
+    }
+    @keyframes slide {
+        100%{
+            transform: translateX(0);
+        }
+    }
+    header .header-content h2{
+        font-size: 1.8rem;
+        padding: 0 10px;
+        color: var(--heading);
+        margin-bottom: 1rem;
+    }
+    header .header-content p{
+        font-size: 0.9rem;
+        padding: 10px;
+        color: var(--paragraph);
+        margin-bottom: 2rem;
+        font-weight: 400;
+    }
+    header .header-btn{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        row-gap: 18px;
+    }
+    header .header-btn button, .clipboard-ios button{
+        width: 250px;
+        height: 40px;
+        border: none;
+        border-radius: 50px;
+        background-color: var(--button1);
+        color: white;
+        font-size: 13px;
+        font-weight: 400;
+        box-shadow: 0 3px 0 rgba(38, 186, 164,0.2);
+    }
+
+    /* -------------snippet section-------------- */
+    .snippet{
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+        margin-top: 250px;
+    } 
+    .snippet h2{
+        color: var(--heading);
+        padding: 10px;
+        font-size: 1.5rem;
+    }
+    .snippet p{
+        width: 90%;
+        padding: 15px;
+        text-align: center;
+        margin: 10px auto;
+        color: var(--paragraph);
+        line-height: 25px;
+    }
+    /* ------------macbook section------------------ */
+    .macbook{
+        margin-top: 35px;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .macbook .row .macbook-img{
+        width: 100%;
+        padding: 20px;
+    }
+    .macbook .row .col img{
+        width: 100%;
+    }
+    .macbook .row .col:nth-child(1){
+        margin-left: 0;
+    }
+    .macbook .row .macbook-content .row1{
+        border: 2px solid red;
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        /* margin-right: 100px; */
+    }
+    .macbook .row .col:nth-child(2){
+        width: 100%;
+        right: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 650px;
+        row-gap: 30px;
+    }
+    .macbook .row .macbook-content .row1 h2{
+        font-size: 1.5rem;
+    }
+    .macbook .row .macbook-content .row1 p{
+        width: 90%;
+        text-align: center;
+        font-size: 1rem
+    }
+    /* -----------clipboard section-------------------- */
+    .clipboard{
+        text-align: center;
+        margin-top: 550px;
+    }
+    .clipboard h2{
+        font-size: 1.6rem;
+        color: var(--heading);
+        margin-bottom: 10px;
+    }
+    .clipboard p{
+        margin: 0 auto;
+        width: 90%;
+        padding: 0 5px;
+        color: var(--paragraph);
+        font-size: 0.9rem;
+        line-height: 2rem;
+    }
+    /* -----------workflow section---------------- */
+    .workflow{
+        text-align: center;
+        margin-top: 100px;
+    }
+    .workflow h2{
+        font-size: 1.6rem;
+    }
+    .workflow p{
+        font-size: 1rem;
+    }
+
+    /* -----------features section-------------- */
+    .features{
+        margin-top: 90px;
+        position: relative;
+    }
+    .features .row .col h2{
+        font-size: 1.5rem;
+    }
+    .features .row .col p{
+        width: 100%;
+        font-size: 0.9rem;
+        margin-top: 10px;
+    }
+
+    /* -----------company section--------------- */
+    .companies{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .companies .row{
+        width: 100%;
+        margin: 100px 20px 0 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+        row-gap: 50px;
+    }
+    .companies .row .col img{
+        width: 100px;
+    }
+
+    /* --------clipboard-ios section-------------- */
+    .clipboard-ios{
+        margin-top: 200px;
+    }
+    .clipboard-ios h2{
+        font-size: 1.6rem;
+        padding: 10px;
+    }
+    .clipboard-ios p{
+        width: 90%;
+        padding: 10px;
+        margin: 20px auto;
+        font-size: 1rem;
+    }
+    .clipboard-ios .button button{
+        margin-bottom: 15px;
+    }
+
+    /* ---------footer section--------------------- */
+    .footer-section .row{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+    }
+    .footer-section .row .col img{
+        max-width: 50px;
+        margin: 20px 0 40px 0;
+    }
+    .footer-section .row .social{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}   
+    /* ---------------tablets------------------ */
+
+@media only screen and (max-width: 768px) {
+    header .header-content p{
+        font-size: 1.1rem;
+        padding: 15px;
+        color: var(--paragraph);
+        margin-bottom: 2rem;
+        font-weight: 400;
+    }
+
+    /* -------------snippet action------------ */
+    .snippet p{
+        width: 90%;
+        padding: 15px;
+        text-align: center;
+        margin: 10px auto;
+        color: var(--paragraph);
+        line-height: 25px;
+        font-size: 1rem;
+    }
+    /* -----------macbook section------------- */
+    .macbook .row .macbook-img{
+        width: 100%;
+        padding: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .macbook .row .col img{
+        width: 85%;
+        margin-right: -25px;
+    }
+    .macbook .row .macbook-content .row1{
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .macbook .row .col:nth-child(2){
+        width: 100%;
+        right: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 700px;
+        row-gap: 30px;
+    }
+    .macbook .row .macbook-content .row1 p{
+        width: 70%;
+        text-align: center;
+        font-size: 1rem;
+    }
+    /* -------clipboard section----------------- */
+    .clipboard{
+        text-align: center;
+        margin-top: 500px;
+    } 
+    .clipboard h2{
+        font-size: 1.8rem;
+    }
+    .clipboard p{
+        margin: 0 auto;
+        width: 80%;
+        padding: 0 5px;
+        color: var(--paragraph);
+        font-size: 1rem;
+        line-height: 2rem;
+    }
+    /* ------workflow section---------------- */
+    .workflow h2{
+        font-size: 2rem;
+    }
+
+    /* ----------features section-=-------- */
+    .features .row .col h2{
+        font-size: 1.5rem;
+        margin-bottom: 2rem;
+    }
+    .features .row .col p{
+        width: 70%;
+        font-size: 0.9rem;
+        margin-top: 10px;
+    }
+    /* Button Transition*/
+    button{
+        transition: all .5s ease;
+    }
+    button:active{
+        transform: translateY(5px);
+    }
+    /* --------company section-=------------- */
+    .companies .row{
+        width: 100%;
+        margin: 100px 20px 0 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+        row-gap: 70px;
+    }
+    /* --------clipboard-ios -section------------- */
+    .clipboard-ios h2{
+        font-size: 1.8rem;
+        padding: 10px;
+    }
+    .clipboard-ios p{
+        width: 90%;
+        padding: 10px;
+        margin: 20px auto;
+        font-size: 1.1rem;
+    }
+
+    /* --------footer section------------ */
+    .footer-section .row{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+    }
+    .footer-section .row .col img{
+        max-width: 50px;
+        margin: 20px 0 40px 0;
+    }
+    .footer-section .row .social{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .footer-section .row .social{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+    }
+    .footer-section .row .social a{
+        margin-left: 50px;
+    }
+
+}
+
+/* ----------media query for ipads--------------- */
+@media only screen and (max-width: 1024px){
+    /* -------snippet section------------ */
+    .snippet h2{
+        color: var(--heading);
+        padding: 10px;
+        font-size: 2rem;
+    } 
+    .snippet p{
+        width: 90%;
+        padding: 15px;
+        text-align: center;
+        line-height: 25px;
+        font-size: 1.2rem;
+    }
+    /* --------macbook section--------------- */
+    .macbook .row .macbook-img{
+        width: 100%;
+        padding: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .macbook .row .col img{
+        width: 90%;
+        margin-right: -25px;
+    }
+    .macbook .row .col:nth-child(2){
+        width: 100%;
+        right: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 950px;
+        row-gap: 30px;
+    }
+    .macbook .row .macbook-content .row1{
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .macbook .row .macbook-content .row1 p{
+        width: 80%;
+        text-align: center;
+        font-size: 1.3rem;
+    }
+    .macbook .row .macbook-content .row1 h2{
+        font-size: 2rem ;
+    }
+
+    /* ------clipboard section------------ */
+    .clipboard{
+        text-align: center;
+        margin-top: 450px;
+    } 
+    .clipboard p{
+        margin: 0 auto;
+        width: 80%;
+        padding: 0 5px;
+        color: var(--paragraph);
+        font-size: 1rem;
+        line-height: 2rem;
+    }
+    /* --------feature section----------- */
+    .features .row .col p{
+        width: 60%;
+        font-size: 0.9rem;
+        margin-top: 10px;
+    }
+    .features .row .col{
+        margin-top: 40px;
+    }
+    /* -------company section-------- */
+    .companies .row{
+        width: 100%;
+        margin: 100px 20px 0 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+        row-gap: 70px;
+    }
+    /* -----clipboard-ios section--------- */
+    .clipboard-ios p{
+        width: 80%;
+        padding: 10px;
+        margin: 20px auto;
+        font-size: 1.1rem;
+    }
+}
+
+/* @media only screen and (max-width: 1366px){
+    /* -----macbook section--------- */
+    .macbook .row .col img{
+        width: 70%;
+        margin-right: -25px;
+    } 
+    .macbook .row .col:nth-child(2){
+        width: 55%;
+        position: absolute;
+        right: 0;
+        height: 62vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-left: 2rem;
+        align-items: flex-start;
+
+    }
+
+
+@media only screen and (max-width: 1760px){
+    /* ----header----- */
+    header img{
+        width: 200px;
+        margin-bottom: 3rem;
+    }
+    header .header-content h2{
+        font-size: 3.5rem;
+        color: var(--heading);
+        margin-bottom: 1rem;
+    }
+    header .header-content p{
+        font-size: 1.8rem;
+        color: var(--paragraph);
+        margin-bottom: 2rem;
+        font-weight: 400;
+    }
+    header .header-btn button, .clipboard-ios button{
+        width: 300px;
+        height: 70px;
+        border: none;
+        border-radius: 50px;
+        background-color: var(--button1);
+        color: white;
+        font-size: 20px;
+        font-weight: 400;
+        box-shadow: 0 3px 0 rgba(38, 186, 164,0.2);
+    }
+
+    /* ------snippet----- */
+    .snippet{
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+        margin-top: -250px;
+    }
+    .snippet h2{
+        color: var(--heading);
+        font-size: 3.5rem;
+    }
+    .snippet p{
+        width: 60%;
+        text-align: center;
+        margin: 10px auto;
+        color: var(--paragraph);
+        line-height: 40px;
+        font-size: 1.8rem;
+    }
+    .macbook{
+        margin-top: 200px;
+        position: relative;
+    }
+    
+    /* -----clipboard section------ */
+    .clipboard h2{
+        font-size: 3.5rem;
+        color: var(--heading);
+        margin-bottom: 10px;
+    }
+    .clipboard p{
+        margin: 0 auto;
+        width: 60%;
+        color: var(--paragraph);
+        font-size: 1.8rem;
+        line-height: 2rem;
+    }
+    /* ----workflow section------ */
+    .workflow h2{
+        font-size: 3.5rem;
+        color: var(--heading);
+        margin-bottom: 20px;
+    }
+    .workflow p{
+        color: var(--paragraph);
+        font-size: 1.8rem;
+    } 
+
+    /* ----features section------ */
+    .features .row .col{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin: 40px 10px;
+    }
+    .features .row .col h2{
+        font-size: 3.5em;
+        color: var(--heading);
+    }
+    .features .row .col p{
+        text-align: center;
+        width: 47%;
+        color: var(--paragraph);
+        font-size: 1.8rem;
+    }
+
+    /* ------clipboard-ios--------- */
+    .clipboard-ios h2{
+        text-align: center;
+        font-size: 3.5rem;
+        color: var(--heading);
+    }
+    .clipboard-ios p{
+        text-align: center;
+        width: 60%;
+        margin: 20px auto;
+        font-size: 1.8rem;
+        color: var(--paragraph);
+    }
+
+    /* -------footer section-------- */
+    .footer-section .row .col img{
+        max-width: 60px;
+    }
+    .footer-section .row .col a{
+        text-decoration: none;
+        margin-bottom: 20px;
+        color: var(--heading);
+        font-weight: 600;
+        font-size: 1.8rem;
+    }
+}
+
+
